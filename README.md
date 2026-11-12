@@ -34,9 +34,9 @@ data/     prompts, generated answers, attacked texts, per-text scores and summar
 5. Attacks: `sbatch attack/attack.sbatch` (edits, rewrites by E4B and 31B via vLLM), `sbatch attack/round2.sbatch`
    (partial rewrites, Bayesian detector), `sbatch attack/review.sbatch` (second key, E4B 4-bit, entropy, attacks on
    unmarked text, paraphrase fidelity judged by Qwen3.5-9B).
-6. Temperature experiment: `sbatch attack/temp.sbatch` (E4B at temperature 0.5, 0.7 and 1.3, 31B at 1.3, entropy for
+6. Temperature experiment: `sbatch attack/temp.sbatch` (E4B at temperature 0.5, 0.7 and 1.3, 31B at 1.3, plus unwatermarked answers at those temperatures via `attack/tempplain.sbatch`; entropy for
    each via `gen/entropy.py` with `WM_TEMP`, then answer quality judged by Qwen3.5-9B with `attack/quality.py`).
-7. Analysis: `python gen/analysis.py`, `python gen/analysis2.py` and `WM_KEYDIR=key2 python gen/score_key2.py`.
+7. Analysis: `python gen/analysis.py`, `python gen/analysis2.py`, `python gen/analysis3.py` (false positives at each temperature, paired quality) and `WM_KEYDIR=key2 python gen/score_key2.py`.
 
 Calibration is two-fold cross-fitted: prompts are split by id parity, a 1% threshold is set on each half's unmarked
 texts and used only to judge the other half, and the two held-out halves are pooled.
