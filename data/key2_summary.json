@@ -1,0 +1,22 @@
+{
+ "key2_answers": {
+  "mean": 63.5,
+  "weighted": 66.8
+ },
+ "key2_open": {
+  "mean": 93.0,
+  "weighted": 94.5
+ },
+ "key2_constrained": {
+  "mean": 34.0,
+  "weighted": 39.0
+ },
+ "unmarked_under_key2": {
+  "mean": 1.1,
+  "weighted": 1.4
+ },
+ "key1_answers_under_key2": {
+  "mean": 1.0,
+  "weighted": 0.8
+ }
+}

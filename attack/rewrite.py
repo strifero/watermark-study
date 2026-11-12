@@ -26,7 +26,7 @@ def main():
         for r in map(json.loads, open(OUT)):
             done.add((r["model"], r["id"], r["attack"]))
 
-    llm = LLM(MP, quantization="fp8", tensor_parallel_size=2, max_model_len=4096, gpu_memory_utilization=0.95, max_num_batched_tokens=4096,
+    llm = LLM(MP, quantization="fp8", tensor_parallel_size=2, disable_custom_all_reduce=True, max_model_len=4096, gpu_memory_utilization=0.95, max_num_batched_tokens=4096,
               max_num_seqs=32, limit_mm_per_prompt={"image": 0, "audio": 0, "video": 0}, seed=11)
     sp = SamplingParams(temperature=0.7, top_p=0.95, max_tokens=700, seed=11)
 

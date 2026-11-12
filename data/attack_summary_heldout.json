@@ -1,0 +1,529 @@
+{
+ "thresholds": {
+  "bayes": 2.4527814388275146,
+  "mean": 2.6627079945585566,
+  "weighted": 2.381434490405563
+ },
+ "results": [
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "backtr",
+   "level": 0,
+   "n": 200,
+   "mean": 31.5,
+   "weighted": 47.0,
+   "bayes": 47.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "para",
+   "level": 0,
+   "n": 200,
+   "mean": 0.0,
+   "weighted": 1.0,
+   "bayes": 1.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "para2",
+   "level": 0,
+   "n": 200,
+   "mean": 1.0,
+   "weighted": 3.0,
+   "bayes": 4.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.25,
+   "n": 200,
+   "mean": 53.0,
+   "weighted": 63.0,
+   "bayes": 62.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.5,
+   "n": 200,
+   "mean": 34.0,
+   "weighted": 49.0,
+   "bayes": 50.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.75,
+   "n": 200,
+   "mean": 11.0,
+   "weighted": 25.0,
+   "bayes": 24.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 100,
+   "n": 200,
+   "mean": 33.5,
+   "weighted": 48.5,
+   "bayes": 42.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 25,
+   "n": 200,
+   "mean": 7.0,
+   "weighted": 14.5,
+   "bayes": 0.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 50,
+   "n": 200,
+   "mean": 14.0,
+   "weighted": 29.5,
+   "bayes": 9.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.1,
+   "n": 200,
+   "mean": 40.0,
+   "weighted": 53.5,
+   "bayes": 52.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.25,
+   "n": 200,
+   "mean": 14.0,
+   "weighted": 20.0,
+   "bayes": 16.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.5,
+   "n": 200,
+   "mean": 1.5,
+   "weighted": 3.0,
+   "bayes": 1.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.1,
+   "n": 200,
+   "mean": 3.0,
+   "weighted": 8.5,
+   "bayes": 8.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.25,
+   "n": 200,
+   "mean": 11.0,
+   "weighted": 19.5,
+   "bayes": 23.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.5,
+   "n": 200,
+   "mean": 18.0,
+   "weighted": 30.5,
+   "bayes": 31.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "none",
+   "level": 0,
+   "n": 200,
+   "mean": 62.5,
+   "weighted": 67.5,
+   "bayes": 66.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "reflow",
+   "level": 0,
+   "n": 200,
+   "mean": 55.0,
+   "weighted": 64.0,
+   "bayes": 63.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.1,
+   "n": 200,
+   "mean": 32.0,
+   "weighted": 48.0,
+   "bayes": 47.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.25,
+   "n": 200,
+   "mean": 8.5,
+   "weighted": 16.0,
+   "bayes": 15.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.5,
+   "n": 200,
+   "mean": 3.0,
+   "weighted": 3.5,
+   "bayes": 3.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.1,
+   "n": 200,
+   "mean": 42.0,
+   "weighted": 55.0,
+   "bayes": 55.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.25,
+   "n": 200,
+   "mean": 15.5,
+   "weighted": 24.5,
+   "bayes": 29.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.5,
+   "n": 200,
+   "mean": 4.0,
+   "weighted": 6.0,
+   "bayes": 5.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "g31b",
+   "attack": "backtr",
+   "level": 0,
+   "n": 200,
+   "mean": 30.0,
+   "weighted": 44.5,
+   "bayes": 45.0
+  },
+  {
+   "model": "e4b",
+   "attacker": "g31b",
+   "attack": "para",
+   "level": 0,
+   "n": 200,
+   "mean": 0.5,
+   "weighted": 2.5,
+   "bayes": 2.5
+  },
+  {
+   "model": "e4b",
+   "attacker": "g31b",
+   "attack": "para2",
+   "level": 0,
+   "n": 200,
+   "mean": 1.5,
+   "weighted": 5.0,
+   "bayes": 5.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "backtr",
+   "level": 0,
+   "n": 200,
+   "mean": 4.5,
+   "weighted": 10.5,
+   "bayes": 13.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "para",
+   "level": 0,
+   "n": 200,
+   "mean": 0.5,
+   "weighted": 1.5,
+   "bayes": 2.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "para2",
+   "level": 0,
+   "n": 200,
+   "mean": 0.0,
+   "weighted": 0.0,
+   "bayes": 1.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.25,
+   "n": 200,
+   "mean": 7.0,
+   "weighted": 19.5,
+   "bayes": 20.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.5,
+   "n": 200,
+   "mean": 3.0,
+   "weighted": 9.0,
+   "bayes": 9.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "e4b",
+   "attack": "partial",
+   "level": 0.75,
+   "n": 200,
+   "mean": 1.5,
+   "weighted": 3.0,
+   "bayes": 4.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 100,
+   "n": 200,
+   "mean": 5.0,
+   "weighted": 8.0,
+   "bayes": 3.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 25,
+   "n": 200,
+   "mean": 1.0,
+   "weighted": 1.0,
+   "bayes": 0.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "crop",
+   "level": 50,
+   "n": 200,
+   "mean": 3.0,
+   "weighted": 5.0,
+   "bayes": 0.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.1,
+   "n": 200,
+   "mean": 2.0,
+   "weighted": 9.5,
+   "bayes": 10.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.25,
+   "n": 200,
+   "mean": 2.0,
+   "weighted": 2.5,
+   "bayes": 2.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "delete",
+   "level": 0.5,
+   "n": 200,
+   "mean": 0.0,
+   "weighted": 0.0,
+   "bayes": 0.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.1,
+   "n": 200,
+   "mean": 2.0,
+   "weighted": 4.0,
+   "bayes": 4.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.25,
+   "n": 200,
+   "mean": 2.5,
+   "weighted": 3.5,
+   "bayes": 7.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "dilute",
+   "level": 0.5,
+   "n": 200,
+   "mean": 3.0,
+   "weighted": 6.5,
+   "bayes": 7.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "none",
+   "level": 0,
+   "n": 200,
+   "mean": 13.5,
+   "weighted": 25.5,
+   "bayes": 25.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "reflow",
+   "level": 0,
+   "n": 200,
+   "mean": 8.0,
+   "weighted": 17.5,
+   "bayes": 21.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.1,
+   "n": 200,
+   "mean": 3.5,
+   "weighted": 6.5,
+   "bayes": 7.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.25,
+   "n": 200,
+   "mean": 0.5,
+   "weighted": 1.5,
+   "bayes": 3.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "swap",
+   "level": 0.5,
+   "n": 200,
+   "mean": 0.0,
+   "weighted": 1.0,
+   "bayes": 1.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.1,
+   "n": 200,
+   "mean": 3.5,
+   "weighted": 10.5,
+   "bayes": 9.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.25,
+   "n": 200,
+   "mean": 1.5,
+   "weighted": 2.0,
+   "bayes": 2.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "edit",
+   "attack": "typo",
+   "level": 0.5,
+   "n": 200,
+   "mean": 0.5,
+   "weighted": 1.5,
+   "bayes": 2.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "g31b",
+   "attack": "backtr",
+   "level": 0,
+   "n": 200,
+   "mean": 4.5,
+   "weighted": 9.0,
+   "bayes": 13.0
+  },
+  {
+   "model": "g31b",
+   "attacker": "g31b",
+   "attack": "para",
+   "level": 0,
+   "n": 200,
+   "mean": 1.0,
+   "weighted": 1.5,
+   "bayes": 1.5
+  },
+  {
+   "model": "g31b",
+   "attacker": "g31b",
+   "attack": "para2",
+   "level": 0,
+   "n": 200,
+   "mean": 0.0,
+   "weighted": 3.0,
+   "bayes": 4.0
+  }
+ ]
+}

@@ -40,7 +40,7 @@ def main():
                 for i in pick:
                     jobs.append(u[i][0])
     uniq = sorted(set(jobs))
-    llm = LLM(mp, quantization="fp8", tensor_parallel_size=2, max_model_len=2048, gpu_memory_utilization=0.95,
+    llm = LLM(mp, quantization="fp8", tensor_parallel_size=2, disable_custom_all_reduce=True, max_model_len=2048, gpu_memory_utilization=0.95,
               max_num_batched_tokens=4096, max_num_seqs=64, limit_mm_per_prompt={"image": 0, "audio": 0, "video": 0}, seed=7)
     sp = SamplingParams(temperature=0.7, top_p=0.95, max_tokens=200, seed=7)
     res = llm.chat([[{"role": "user", "content": PROMPT.format(t=t)}] for t in uniq], sp,

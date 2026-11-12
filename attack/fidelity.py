@@ -34,7 +34,7 @@ def main():
             k = (r["attacker"], r["attack"], r["level"])
             if k in PICK:
                 att[(r["model"], r["id"], k)] = r["text"]
-    llm = LLM(JUDGE, tensor_parallel_size=2, max_model_len=6144, gpu_memory_utilization=0.92, max_num_seqs=48, seed=3,
+    llm = LLM(JUDGE, tensor_parallel_size=2, disable_custom_all_reduce=True, max_model_len=6144, gpu_memory_utilization=0.92, max_num_seqs=48, seed=3,
               limit_mm_per_prompt={"image": 0, "video": 0})
     sp = SamplingParams(temperature=0.0, max_tokens=700)
     kw = {"chat_template_kwargs": {"enable_thinking": False}}

@@ -1,0 +1,93 @@
+{
+ "threshold_z": 2.608,
+ "e4b/open/wm": {
+  "flagged": 94.5,
+  "median_z": 5.57,
+  "median_scored_tokens": 310
+ },
+ "e4b/open/plain": {
+  "flagged": 1.5,
+  "median_z": 0.24,
+  "median_scored_tokens": 309
+ },
+ "e4b/open/human": {
+  "flagged": 0.5,
+  "median_z": 0.0,
+  "median_scored_tokens": 96
+ },
+ "e4b/constrained/wm": {
+  "flagged": 31.5,
+  "median_z": 1.67,
+  "median_scored_tokens": 160
+ },
+ "e4b/constrained/plain": {
+  "flagged": 1.0,
+  "median_z": 0.2,
+  "median_scored_tokens": 158
+ },
+ "e4b/constrained/human": {
+  "flagged": 1.0,
+  "median_z": 0.15,
+  "median_scored_tokens": 74
+ },
+ "e4b/all/wm": {
+  "flagged": 63.0,
+  "median_z": 3.9,
+  "median_scored_tokens": 300
+ },
+ "e4b/all/plain": {
+  "flagged": 1.2,
+  "median_z": 0.21,
+  "median_scored_tokens": 295
+ },
+ "e4b/all/human": {
+  "flagged": 0.8,
+  "median_z": 0.09,
+  "median_scored_tokens": 86
+ },
+ "g31b/open/wm": {
+  "flagged": 31.0,
+  "median_z": 2.15,
+  "median_scored_tokens": 305
+ },
+ "g31b/open/plain": {
+  "flagged": 1.0,
+  "median_z": 0.21,
+  "median_scored_tokens": 304
+ },
+ "g31b/open/human": {
+  "flagged": 0.5,
+  "median_z": 0.0,
+  "median_scored_tokens": 96
+ },
+ "g31b/constrained/wm": {
+  "flagged": 6.0,
+  "median_z": 0.73,
+  "median_scored_tokens": 132
+ },
+ "g31b/constrained/plain": {
+  "flagged": 1.5,
+  "median_z": 0.08,
+  "median_scored_tokens": 130
+ },
+ "g31b/constrained/human": {
+  "flagged": 1.0,
+  "median_z": 0.15,
+  "median_scored_tokens": 74
+ },
+ "g31b/all/wm": {
+  "flagged": 18.5,
+  "median_z": 1.34,
+  "median_scored_tokens": 287
+ },
+ "g31b/all/plain": {
+  "flagged": 1.2,
+  "median_z": 0.16,
+  "median_scored_tokens": 285
+ },
+ "g31b/all/human": {
+  "flagged": 0.8,
+  "median_z": 0.09,
+  "median_scored_tokens": 86
+ }
+}
