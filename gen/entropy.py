@@ -18,7 +18,11 @@ dev = model.get_input_embeddings().weight.device
 prompts = {r["id"]: r["prompt"] for r in map(json.loads, open(f"{D}/prompts.jsonl"))}
 
 
+TEMP = float(os.environ.get("WM_TEMP", "1.0"))
+
+
 def sampled_entropy(logits):
+    logits = logits.float() / TEMP
     logp_full = torch.log_softmax(logits.float(), -1)
     H_full = -(logp_full.exp() * logp_full).sum(-1)
     v, _ = logits.float().topk(64, dim=-1)                       # top-k 64

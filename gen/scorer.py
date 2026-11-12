@@ -15,7 +15,8 @@ PROC = SynthIDTextWatermarkLogitsProcessor(ngram_len=K["ngram_len"], keys=K["key
 PROC.sampling_table = torch.load(KD + "/sampling_table.pt")
 TOK = {"g31b": AutoTokenizer.from_pretrained("/home/sean/models/gemma-4-31B-it"),
        "e4b": AutoTokenizer.from_pretrained("/home/sean/models/gemma-4-E4B-it")}
-TOK["e4bq4"] = TOK["e4bk2"] = TOK["e4b"]
+TOK["e4bq4"] = TOK["e4bk2"] = TOK["e4bt05"] = TOK["e4bt07"] = TOK["e4bt13"] = TOK["e4b"]
+TOK["g31bt13"] = TOK["g31b"]
 
 
 def score(text, model="g31b"):

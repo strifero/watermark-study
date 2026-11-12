@@ -34,7 +34,12 @@ data/     prompts, generated answers, attacked texts, per-text scores and summar
 5. Attacks: `sbatch attack/attack.sbatch` (edits, rewrites by E4B and 31B via vLLM), `sbatch attack/round2.sbatch`
    (partial rewrites, Bayesian detector), `sbatch attack/review.sbatch` (second key, E4B 4-bit, entropy, attacks on
    unmarked text, paraphrase fidelity judged by Qwen3.5-9B).
-6. Analysis: `python gen/analysis.py` and `WM_KEYDIR=key2 python gen/score_key2.py`.
+6. Temperature experiment: `sbatch attack/temp.sbatch` (E4B at temperature 0.5, 0.7 and 1.3, 31B at 1.3, entropy for
+   each via `gen/entropy.py` with `WM_TEMP`, then answer quality judged by Qwen3.5-9B with `attack/quality.py`).
+7. Analysis: `python gen/analysis.py`, `python gen/analysis2.py` and `WM_KEYDIR=key2 python gen/score_key2.py`.
+
+Calibration is two-fold cross-fitted: prompts are split by id parity, a 1% threshold is set on each half's unmarked
+texts and used only to judge the other half, and the two held-out halves are pooled.
 
 Software: transformers 5.17.0, vLLM 0.31.0, bitsandbytes, PyTorch with CUDA. Paths in the scripts point at
 `/home/sean/...`; change them to your layout.
@@ -42,8 +47,10 @@ Software: transformers 5.17.0, vLLM 0.31.0, bitsandbytes, PyTorch with CUDA. Pat
 ## Data files
 
 * `prompts.jsonl`: prompt, kind (open or constrained), Dolly category, the human answer.
-* `gen_<model>_<wm|plain>.jsonl`: generated answers (`e4bk2` = second key, `e4bq4` = E4B in 4-bit).
+* `gen_<model>_<wm|plain>.jsonl`: generated answers (`e4bk2` = second key, `e4bq4` = E4B in 4-bit, `e4bt05` /
+  `e4bt07` / `e4bt13` / `g31bt13` = temperature 0.5 / 0.7 / 1.3).
+* `entropy_<model>.json`: per-answer sampling entropy; `quality.jsonl`: judge scores.
 * `atk_*.jsonl`: attacked texts (`*_plain` = the same attacks on unmarked answers).
-* `attack_scores*.json`, `review_summary.json`, `key2_summary.json`, `fidelity*.json*`: per-text scores and summaries.
+* `attack_scores*.json`, `review_summary.json`, `review2_summary.json`, `key2_summary.json`, `fidelity*.json*`: per-text scores and summaries.
 
 Dolly 15k is CC BY-SA 3.0; generated and attacked texts derived from it are shared under the same terms.

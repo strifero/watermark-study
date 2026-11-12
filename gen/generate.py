@@ -28,7 +28,7 @@ def run(b):
     texts = [tok.apply_chat_template([{"role": "user", "content": r["prompt"]}], tokenize=False, add_generation_prompt=True) for r in b]
     enc = tok(texts, return_tensors="pt", padding=True, add_special_tokens=False).to(dev)
     with torch.no_grad():
-        g = model.generate(**enc, do_sample=True, temperature=1.0, top_k=64, top_p=0.95, max_new_tokens=320,
+        g = model.generate(**enc, do_sample=True, temperature=float(os.environ.get("WM_TEMP", "1.0")), top_k=64, top_p=0.95, max_new_tokens=320,
                            watermarking_config=wcfg, pad_token_id=tok.pad_token_id)
     return [tok.decode(seq, skip_special_tokens=True) for seq in g[:, enc.input_ids.shape[1]:]]
 
